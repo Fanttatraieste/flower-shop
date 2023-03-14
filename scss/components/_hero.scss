@@ -1,0 +1,127 @@
+//Hero stilization
+.hero {
+  width: 100%;
+  height: 311px;
+  background-image: url("../images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 24px;
+  overflow: hidden;
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 33px;
+  }
+  &__title {
+    font-family: "Tilt Warp";
+    font-size: 28;
+    line-height: 1.28;
+    text-align: center;
+    letter-spacing: 0.17em;
+    color: var(--secondary-color);
+    max-width: 198px;
+  }
+  &__subtitle {
+    display: none;
+  }
+}
+
+.hero__circle {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  .logo__container {
+    display: flex;
+    align-items: center;
+  }
+  .icon__flower {
+    width: 67px;
+    height: 67px;
+  }
+  .icon__studio__link {
+    color: var(--secondary-color);
+  }
+  .icon__studio {
+    width: 98px;
+    height: 37px;
+    fill: currentColor;
+  }
+}
+
+@media screen and (min-width: 744px) {
+  .hero {
+    background-image: url("../images/hero-bg744.jpg");
+    height: 499px;
+    &__inner {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-top: 0;
+      position: relative;
+    }
+    &__title {
+      max-width: 462px;
+      text-align: right;
+      align-self: flex-end;
+      margin-bottom: 23px;
+      font-size: 52px;
+    }
+    &__subtitle {
+      display: block;
+      font-family: "Tilt Warp";
+      font-size: 16px;
+      line-height: 1.27;
+      letter-spacing: 0.17em;
+      max-width: 256px;
+      color: var(--secondary-color);
+    }
+    &__subtitle1 {
+      margin-top: 19px;
+    }
+    &__circle {
+      align-self: center;
+    }
+  }
+  .header {
+    .icon__flower {
+      width: 130px;
+      height: 130px;
+    }
+    .icon__studio {
+      width: 191px;
+      height: 72px;
+    }
+  }
+  .hero__circle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--secondary-color);
+    border-radius: 50%;
+    width: 356px;
+    height: 369px;
+    position: absolute;
+    left: 230px;
+    bottom: -360px;
+    .icon__bulina {
+      width: 30px;
+      height: 30px;
+      fill: currentColor;
+    }
+    .hero__btn {
+      color: var(--secondary-color);
+      background: transparent;
+      outline: none;
+      border: none;
+    }
+    .hero__subtitle {
+      margin-top: 50px;
+    }
+  }
+}
