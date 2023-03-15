@@ -63,4 +63,26 @@ p {
   .container {
     max-width: 1440px;
   }
+  .btn--round {
+    width: 125px;
+    height: 125px;
+  }
+  .icon__button {
+    width: 56px;
+    height: 44px;
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  .container {
+    max-width: 2200px;
+  }
+  .btn--round {
+    width: 190px;
+    height: 190px;
+  }
+  .icon__button {
+    width: 87px;
+    height: 67px;
+  }
 }
