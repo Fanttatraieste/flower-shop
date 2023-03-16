@@ -82,8 +82,10 @@
                 alt="men jumping in the water"
               >
               <div class="about__item__text">
+                <p class="about__more">Our flower shop is a family business that has been passed down through three generations. Our current owner initially pursued a career in professional sports, but upon retiring at the age of 30, he rediscovered his passion for flowers and decided to continue the family legacy. Despite his attempts to stray from his destiny, he found that his roads always led him back to the flower shop. Under his leadership, our business has expanded internationally across Europe, and we continue to take pride in providing the highest quality flowers to our customers</p>
                 <p class="about__less">Our flower shop is a family business that has been passed down through three generations. Our current owner initially pursued a career in professional sports, but upon retiring at the age of 30, he rediscovered his passion for flowers and decided to continue the family legacy.  </p>
-                <button type="button" class="about__btn">Read more</button>
+                <button type="button" class="about__btn__more">Read more</button>
+                <button type="button" class="about__btn__less">Read less</button>
               </div>
             </li>
             <li class="about__item">
@@ -103,8 +105,10 @@
                 alt="men jumping in the water"
               >
               <div class="about__item__text">
+                <p class="about__more">Looking towards the future, we have big dreams for our flower shop. Currently, we have 10 shops in 6 countries and no proper delivery system. However, we aspire to reach every corner of Europe and expand our business to at least 25 countries, with 3-4 flower shops in every country. We believe that everyone deserves access to the beauty and joy that flowers can bring, and we are committed to making that vision a reality. With hard work and dedication, we know that our flower shop will continue to grow and thrive for generations to come.</p> 
                 <p class="about__less">Looking towards the future, we have big dreams for our flower shop. Currently, we have 10 shops in 6 countries and no proper delivery system. However, we aspire to reach every corner of Europe and expand our business to at least 25 countries, with 3-4 flower shops in every country.  </p>
-                <button type="button" class="about__btn">Read more</button>
+                <button type="button" class="about__btn__more">Read more</button>
+                <button type="button" class="about__btn__less">Read less</button>
               </div>
             </li>
             <li class="about__item">
@@ -125,7 +129,16 @@
               >
               <div class="about__item__text">
                 <p class="about__less">At our flower shop, we believe that every customer is an old friend waiting to be made. We never needed to advertise our services, as the word-of-mouth recommendations from our satisfied customers have been more than enough to sustain our business.  </p>
-                <button type="button" class="about__btn">Read more</button>
+                <p class="about__more">At our flower shop, we believe that every customer is an old friend waiting to be made. We never needed to advertise our services, as the word-of-mouth recommendations from our satisfied customers have been more than enough to sustain our business. We understand that beautiful flowers can be found anywhere, but it is the way we approach them every season, how we pair them to make unique bouquets, and how we deliver them with a smile and personalized service that sets us apart from our competitors. Whether you're a new or returning customer, we are dedicated to making your experience with us a memorable one.</p>
+                <button 
+                  type="button" 
+                  class="about__btn__more" 
+                  aria-expanded="false"
+                  aria-controls="mobile-menu"
+                  >
+                  Read more
+                </button>
+                <button type="button" class="about__btn__less">Read less</button>
               </div>
             </li>
           </ul>
@@ -146,5 +159,13 @@
       </section>
     </main>
     <footer></footer>
+    <!-------------- JS Script --------------->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/readMore.js"></script>
   </body>
 </html>
