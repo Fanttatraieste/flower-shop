@@ -1,0 +1,158 @@
+//about stilization
+.about {
+  background-color: var(--brand-color);
+  padding: 33px 0;
+  overflow: hidden;
+  .btn--round {
+    color: var(--black-color);
+    border: 1px solid var(--black-color);
+  }
+  .section__header__inner {
+    padding: 0 40px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 85px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 62px;
+  }
+  &__item {
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    &__text {
+      display: flex;
+      gap: 40px;
+      flex-direction: column;
+    }
+  }
+  &__img {
+    height: 143px;
+    object-fit: cover;
+    border-radius: 29px;
+  }
+  &__less {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1;
+    color: var(--black-color);
+  }
+  &__btn {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1;
+    color: var(--black-color);
+    background: transparent;
+    border: 1px solid rgba(28, 26, 29, 0.5);
+    border-radius: 24px;
+    padding: 13px;
+    max-width: 111px;
+  }
+}
+
+@media screen and (min-width: 744px) {
+  .about {
+    padding: 63px 0;
+    .section__header__inner {
+      padding: 0 60px;
+    }
+    &__inner {
+      margin-top: 105px;
+      flex-direction: column;
+      position: relative; //for the circle
+    }
+    &__list {
+      gap: 100px;
+    }
+    &__item {
+      gap: 45px;
+    }
+    &__img {
+      height: 194px;
+      width: 244px;
+    }
+    .bottom {
+      border: 1px solid var(--black-color);
+      &__text {
+        color: var(--black-color);
+      }
+      &__btn {
+        color: var(--black-color);
+      }
+    }
+  }
+  .home--btn {
+    color: var(--black-color);
+    border: 1px solid rgba(28, 26, 29, 0.5);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about {
+    padding: 63px 0;
+    .section__header__inner {
+      padding: 0 60px;
+    }
+    &__inner {
+      margin-top: 90px;
+      flex-direction: column;
+      position: relative; //for the circle
+    }
+    &__list {
+      gap: 100px;
+    }
+    &__item {
+      max-width: 344px;
+      gap: 45px;
+      &__text {
+        display: flex;
+        gap: 45px;
+        flex-direction: column;
+      }
+    }
+    &__item:nth-child(2) {
+      flex-direction: column-reverse;
+    }
+    &__img {
+      height: 271px;
+      width: 344px;
+    }
+    &__less {
+      font-size: 21px;
+    }
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  .about {
+    padding: 73px 0;
+    .section__header__inner {
+      padding: 0 60px;
+    }
+    &__list {
+      gap: 150px;
+    }
+    &__item {
+      max-width: 587px;
+      gap: 60px;
+    }
+
+    &__img {
+      height: 400px;
+      width: 587px;
+    }
+    &__less {
+      font-size: 21px;
+    }
+  }
+}

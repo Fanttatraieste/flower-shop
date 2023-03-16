@@ -4,12 +4,9 @@
     <title>FlowerShop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Tilt+Warp&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Tilt+Warp&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-------------- Hero Header section --------------->
@@ -47,7 +44,107 @@
         </div>
       </div>
     </section>
-    <main></main>
+    <!-------------- Main --------------->
+    <main>
+      <!-------------- About --------------->
+      <section class="about">
+        <div class="section__header">
+          <div class="section__header__inner container">
+            <button type="button" class="btn--round">
+              <svg class="icon__button">
+                <use href="./images/svgs/symbol-defs.svg#icon-menu"></use>
+              </svg>
+            </button>
+            <div class="title__container">
+              <h2 class="title">About us</h2>
+              <svg class="title__icon">
+                <use href="./images/svgs/symbol-defs.svg#icon-title"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="about__inner container">
+          <ul class="about__list">
+            <li class="about__item">
+              <img class="about__img"
+                srcset="
+                ./images/about/about1260.jpg 260w,
+                ./images/about/about1244.jpg 244w,
+                ./images/about/about1344.jpg 344w,
+                ./images/about/about1587.jpg 587w,
+                ./images/about/about1520.jpg 520w,
+                ./images/about/about1488.jpg 488w,
+                ./images/about/about1688.jpg 688,
+                ./images/about/about11174.jpg 1174w
+                "
+                src="./images/about/about1587.jpg"
+                sizes="(min-width: 2200px) 587px, (min-width: 1440px) 344px, (min-width: 744px) 244px, 260px"
+                alt="men jumping in the water"
+              >
+              <div class="about__item__text">
+                <p class="about__less">Our flower shop is a family business that has been passed down through three generations. Our current owner initially pursued a career in professional sports, but upon retiring at the age of 30, he rediscovered his passion for flowers and decided to continue the family legacy.  </p>
+                <button type="button" class="about__btn">Read more</button>
+              </div>
+            </li>
+            <li class="about__item">
+              <img class="about__img"
+                srcset="
+                ./images/about/about2260.jpg 260w,
+                ./images/about/about2244.jpg 244w,
+                ./images/about/about2344.jpg 344w,
+                ./images/about/about2587.jpg 587w,
+                ./images/about/about2520.jpg 520w,
+                ./images/about/about2488.jpg 488w,
+                ./images/about/about2688.jpg 688,
+                ./images/about/about21174.jpg 1174w
+                "
+                src="./images/about/about2587.jpg"
+                sizes="(min-width: 2200px) 587px, (min-width: 1440px) 344px, (min-width: 744px) 244px, 260px"
+                alt="men jumping in the water"
+              >
+              <div class="about__item__text">
+                <p class="about__less">Looking towards the future, we have big dreams for our flower shop. Currently, we have 10 shops in 6 countries and no proper delivery system. However, we aspire to reach every corner of Europe and expand our business to at least 25 countries, with 3-4 flower shops in every country.  </p>
+                <button type="button" class="about__btn">Read more</button>
+              </div>
+            </li>
+            <li class="about__item">
+              <img class="about__img"
+                srcset="
+                ./images/about/about3260.jpg 260w,
+                ./images/about/about3244.jpg 244w,
+                ./images/about/about3344.jpg 344w,
+                ./images/about/about3587.jpg 587w,
+                ./images/about/about3520.jpg 520w,
+                ./images/about/about3488.jpg 488w,
+                ./images/about/about3688.jpg 688,
+                ./images/about/about31174.jpg 1174w
+                "
+                src="./images/about/about1587.jpg"
+                sizes="(min-width: 2200px) 587px, (min-width: 1440px) 344px, (min-width: 744px) 244px, 260px"
+                alt="men jumping in the water"
+              >
+              <div class="about__item__text">
+                <p class="about__less">At our flower shop, we believe that every customer is an old friend waiting to be made. We never needed to advertise our services, as the word-of-mouth recommendations from our satisfied customers have been more than enough to sustain our business.  </p>
+                <button type="button" class="about__btn">Read more</button>
+              </div>
+            </li>
+          </ul>
+          <button class="home--btn">
+            <svg class="home--icon">
+              <use href="./images/svgs/symbol-defs.svg#icon-home"></use>
+            </svg>
+          </button>
+          <div class="bottom">
+            <h2 class="bottom__text">Scroll</h2>
+            <button class="bottom__btn">
+                <svg class="bottom__icon">
+                    <use href="./images/svgs/symbol-defs.svg#icon-bulina"></use>
+                </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>

@@ -1,5 +1,6 @@
 @import "../utils/vars";
 @import "../components/hero";
+@import "../components/about";
 
 * {
   padding: 0px;
@@ -43,8 +44,6 @@ p {
   height: 50px;
   border-radius: 50%;
   background: transparent;
-  color: var(--secondary-color);
-  border: 1px solid var(--secondary-color);
 }
 
 .icon__button {
@@ -53,9 +52,113 @@ p {
   height: 18px;
 }
 
+.section__header {
+  width: 100%;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.title {
+  font-family: "Tilt Warp";
+  font-size: 23px;
+  line-height: 1.21;
+  color: var(--black-color);
+  &__icon {
+    width: 48px;
+    height: 59px;
+    position: absolute;
+    top: -4px;
+    right: -30px;
+  }
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+  }
+}
+
+.home--btn {
+  display: none;
+}
+
+.bottom {
+  display: none;
+}
+
 @media screen and (min-width: 744px) {
   .container {
     max-width: 744px;
+  }
+  .btn--round {
+    width: 78px;
+    height: 78px;
+  }
+  .icon__button {
+    width: 36px;
+    height: 29px;
+  }
+  .title {
+    font-size: 36px;
+
+    &__icon {
+      width: 76px;
+      height: 93px;
+
+      top: -5px;
+      right: -40px;
+    }
+  }
+  .home--btn {
+    display: flex;
+    color: var(--black-color);
+    border: 1px solid rgba(28, 26, 29, 0.5);
+    background: transparent;
+    align-self: flex-end;
+    width: 80px;
+    height: 167px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 39px;
+    .home--icon {
+      width: 66px;
+      height: 50px;
+      fill: currentColor;
+    }
+  }
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    position: absolute;
+    bottom: -310px;
+    right: 180px;
+    width: 355px;
+    height: 368px;
+    border-radius: 50%;
+    background: transparent;
+    //border: 1px solid var(--black-color);
+    &__text {
+      font-family: "Tilt Warp";
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1.2;
+      text-align: center;
+      letter-spacing: 0.17em;
+      margin-top: 35px;
+    }
+    &__icon {
+      fill: currentColor;
+      width: 35px;
+      height: 35px;
+    }
+    &__btn {
+      background: transparent;
+      outline: none;
+      border: none;
+    }
   }
 }
 
@@ -71,6 +174,37 @@ p {
     width: 56px;
     height: 44px;
   }
+  .title {
+    font-size: 42px;
+
+    &__icon {
+      width: 89px;
+      height: 109px;
+
+      top: 10px;
+      right: -40px;
+    }
+  }
+  .home--btn {
+    .home--icon {
+      height: 70px;
+    }
+  }
+  .bottom {
+    gap: 27px;
+    bottom: -649px;
+    right: 340px;
+    width: 686px;
+    height: 742px;
+    &__text {
+      font-size: 21px;
+      margin-top: 35px;
+    }
+    &__icon {
+      width: 58px;
+      height: 58px;
+    }
+  }
 }
 
 @media screen and (min-width: 2200px) {
@@ -84,5 +218,40 @@ p {
   .icon__button {
     width: 87px;
     height: 67px;
+  }
+  .title {
+    font-size: 64px;
+
+    &__icon {
+      width: 135px;
+      height: 167px;
+
+      top: 15px;
+      right: -60px;
+    }
+  }
+  .bottom {
+    gap: 40px;
+    bottom: -1000px;
+    right: 540px;
+    width: 1050px;
+    height: 1136px;
+    &__text {
+      font-size: 21px;
+      margin-top: 35px;
+    }
+    &__icon {
+      width: 58px;
+      height: 58px;
+    }
+  }
+  .home--btn {
+    width: 123px;
+    height: 256px;
+    border-radius: 60px;
+    .home--icon {
+      height: 120px;
+      width: 100px;
+    }
   }
 }
