@@ -1,7 +1,7 @@
 @import "../utils/vars";
 @import "../components/hero";
 @import "../components/about";
-
+@import "../components/flower";
 * {
   padding: 0px;
   margin: 0px;
@@ -80,6 +80,14 @@ p {
   }
 }
 
+.subtitle {
+  max-width: 150px;
+  font-family: "Tilt Warp";
+  font-size: 11px;
+  line-height: 1.3;
+  margin-top: 25px;
+}
+
 .home--btn {
   display: none;
 }
@@ -110,6 +118,11 @@ p {
       top: -5px;
       right: -40px;
     }
+  }
+  .subtitle {
+    margin-top: 35px;
+    font-size: 16px;
+    max-width: 200px;
   }
   .home--btn {
     display: flex;
@@ -229,6 +242,11 @@ p {
       top: 15px;
       right: -60px;
     }
+  }
+  .subtitle {
+    font-size: 32px;
+    max-width: 440px;
+    margin-top: 65px;
   }
   .bottom {
     gap: 40px;
