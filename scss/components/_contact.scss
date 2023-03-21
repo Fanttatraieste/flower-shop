@@ -10,6 +10,7 @@
     flex-direction: column;
     background-color: var(--brand-color);
     padding-bottom: 50px;
+    overflow: hidden;
     .section__header__inner {
       padding: 40px 30px 0 30px;
     }
@@ -17,7 +18,8 @@
       display: flex;
       flex-direction: column;
       position: relative;
-      border: 1px solid red;
+      width: 1440px;
+      margin-top: 100px;
     }
     .home--btn {
       align-self: flex-end;
@@ -25,6 +27,150 @@
     .btn--round {
       border: 1px solid var(--black-color);
       color: var(--black-color);
+    }
+    .location {
+      align-self: flex-start;
+    }
+    .bottom {
+      border: 1px solid var(--black-color);
+      &__text {
+        color: var(--black-color);
+      }
+      &__btn {
+        color: var(--black-color);
+      }
+    }
+  }
+  //-------- Find div -------
+  .find {
+    align-self: flex-end;
+    width: 407px;
+    height: 116px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 12px;
+    background-color: var(--secondary-color);
+    &__list {
+      margin-right: auto;
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    &__title {
+      font-family: "Josefin Sans";
+      font-size: 21px;
+      line-height: 1;
+      color: var(--black-color);
+    }
+    &__link {
+      font-family: "Josefin Sans";
+      font-size: 21px;
+      line-height: 1;
+      color: var(--black-color);
+      display: inline-flex;
+      align-items: center;
+    }
+    &__icon {
+      fill: currentColor;
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+    }
+    &__icon1 {
+      fill: none;
+      stroke: var(--black-color);
+    }
+  }
+  //------- Location div ------
+  .location {
+    margin-top: 50px;
+    width: 444px;
+    height: 313px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url("../../images/location/Cluj444.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 70%;
+    position: relative;
+    z-index: 2;
+    .overlay {
+      width: 185px;
+      height: 63px;
+      background-color: rgba(28, 26, 29, 0.5);
+      filter: blur(3.95182px);
+      backdrop-filter: blur(4.93977px);
+    }
+    &__text {
+      color: var(--secondary-color);
+      font-family: "Josefin Sans";
+      font-size: 21px;
+      line-height: 1;
+      position: absolute;
+      bottom: 23px;
+    }
+  }
+  //------- Get in touch div ------
+  .touch {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 216px;
+    height: 490px;
+    align-items: center;
+    border-radius: 25px;
+    background-color: rgba(28, 26, 29, 0.5);
+    position: absolute;
+    bottom: -50px;
+    right: 180px;
+    padding: 15px 10px;
+    &__text {
+      color: rgba(255, 255, 255, 0.5);
+      text-align: center;
+      margin-top: auto;
+      font-family: "Josefin Sans";
+      font-size: 21px;
+      line-height: 1;
+    }
+    &__btn {
+      background-color: transparent;
+      outline: none;
+      border: none;
+      color: var(--secondary-color);
+      font-family: "Josefin Sans";
+      font-size: 21px;
+      line-height: 1;
+    }
+  }
+  //------- Black div ------
+  .black {
+    background-color: var(--black-color);
+    width: 382px;
+    height: 600px;
+    padding-top: 60px;
+    padding-left: 60px;
+    position: absolute;
+    top: -270px;
+    left: 250px;
+    &__title {
+      font-size: 42px;
+      line-height: 1;
+      text-align: center;
+      color: #7cf1a5;
+      font-weight: 300;
+      text-align: left;
+    }
+    &__subtitle {
+      font-family: "Tilt Warp";
+      text-align: right;
+      font-size: 31px;
+      line-height: 1.3;
+      color: #7cf1a5;
+      margin-top: 60px;
+      position: relative;
+      left: 50px;
     }
   }
 }
