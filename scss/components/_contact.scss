@@ -33,6 +33,7 @@
     }
     .bottom {
       border: 1px solid var(--black-color);
+      bottom: -619px;
       &__text {
         color: var(--black-color);
       }
@@ -142,6 +143,38 @@
       font-family: "Josefin Sans";
       font-size: 21px;
       line-height: 1;
+      display: flex;
+      align-items: center;
+    }
+    &__btn__icon {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+      margin-left: 10px;
+    }
+    &__icon {
+      width: 30px;
+      height: 30px;
+      fill: #7cf1a5;
+    }
+    .touch__icon:nth-child(even) {
+      position: relative;
+      top: 30px;
+    }
+    .touch__icon:nth-child(1) {
+      position: relative;
+      left: 15px;
+    }
+    .touch__icon:nth-child(4) {
+      position: relative;
+      right: 15px;
+    }
+    &__icon__container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      max-width: 100px;
+      margin-top: 25px;
     }
   }
   //------- Black div ------
@@ -172,5 +205,221 @@
       position: relative;
       left: 50px;
     }
+  }
+  //------- Circles div ------
+  .circles {
+    position: absolute;
+    right: 500px;
+    bottom: 200px;
+    &1 {
+      width: 178px;
+      height: 178px;
+      border-radius: 50%;
+      background-color: var(--black-color);
+      // background-image: url("../../images/location/Cluj444.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 80% 50%;
+      position: relative;
+      right: -50px;
+      animation: resize 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+    &2 {
+      width: 116px;
+      height: 116px;
+      border-radius: 50%;
+      background-color: var(--black-color);
+      // background-image: url("../../images/location/bistrita444.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 70% 60%;
+      position: relative;
+      left: -40px;
+      bottom: 10px;
+      animation: resize 10s cubic-bezier(0.3, 0, 0.3, 1) infinite;
+    }
+    &3 {
+      width: 93px;
+      height: 93px;
+      border-radius: 50%;
+      background-color: var(--black-color);
+      // background-image: url("../../images/location/Brasov444.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 60% 50%;
+      position: relative;
+      left: 70px;
+      bottom: 20px;
+      animation: resize 6s cubic-bezier(0.2, 0, 0.5, 1) infinite;
+    }
+    .circles1:hover {
+      cursor: pointer;
+      background-image: url("../../images/location/Cluj444.jpg");
+    }
+    .circles2:hover {
+      cursor: pointer;
+      background-image: url("../../images/location/bistrita444.jpg");
+    }
+    .circles3:hover {
+      cursor: pointer;
+      background-image: url("../../images/location/Brasov444.jpg");
+    }
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  .contact {
+    .section__header__inner {
+      padding: 40px 30px 0 30px;
+    }
+    &__inner {
+      width: 2200px;
+      margin-top: 100px;
+    }
+    .location {
+      align-self: flex-start;
+    }
+    .bottom {
+      bottom: -999px;
+    }
+  }
+  //-------- Find div -------
+  .find {
+    width: 618px;
+    height: 177px;
+    padding: 22px;
+    &__list {
+      gap: 12px;
+    }
+    &__title {
+      font-size: 32px;
+    }
+    &__link {
+      font-size: 32px;
+    }
+    &__icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 16px;
+    }
+  }
+  //------- Location div ------
+  .location {
+    margin-top: 90px;
+    width: 674px;
+    height: 474px;
+    background-image: url("../../images/location/Cluj674.jpg");
+    z-index: 2;
+    .overlay {
+      width: 281px;
+      height: 97px;
+      position: relative;
+      bottom: 5px;
+    }
+    &__text {
+      font-size: 32px;
+      bottom: 25px;
+    }
+  }
+  //------- Get in touch div ------
+  .touch {
+    gap: 30px;
+    width: 300px;
+    height: 743px;
+    border-radius: 39px;
+    position: absolute;
+    bottom: -40px;
+    right: 350px;
+    padding: 25px 25px;
+    &__text {
+      font-size: 32px;
+    }
+    &__btn {
+      font-size: 32px;
+    }
+    &__btn__icon {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+      margin-left: 10px;
+    }
+    &__icon {
+      width: 45px;
+      height: 45px;
+    }
+    .touch__icon:nth-child(even) {
+      position: relative;
+      top: 30px;
+    }
+    .touch__icon:nth-child(1) {
+      position: relative;
+      left: 15px;
+    }
+    .touch__icon:nth-child(4) {
+      position: relative;
+      right: 15px;
+    }
+    &__icon__container {
+      gap: 35px;
+      max-width: 150px;
+    }
+  }
+  //------- Black div ------
+  .black {
+    width: 580px;
+    height: 800px;
+    position: absolute;
+    top: -330px;
+    left: 350px;
+    &__title {
+      font-size: 64px;
+    }
+    &__subtitle {
+      font-size: 48px;
+      left: 70px;
+    }
+  }
+  //------- Circles div ------
+  .circles {
+    right: 850px;
+    bottom: 250px;
+    &1 {
+      width: 271px;
+      height: 271px;
+      right: -80px;
+    }
+    &2 {
+      width: 176px;
+      height: 176px;
+    }
+    &3 {
+      width: 142px;
+      height: 142px;
+      left: 100px;
+    }
+    .circles1:hover {
+      cursor: pointer;
+      background-image: url("../../images/location/Cluj674.jpg");
+    }
+    .circles2:hover {
+      cursor: pointer;
+      background-image: url("../../images/location/bistrita674.jpg");
+    }
+    .circles3:hover {
+      cursor: pointer;
+      background-image: url("../../images/location/Brasov674.jpg");
+    }
+  }
+}
+
+@keyframes resize {
+  0% {
+    transform: scale(1) translate(0px, 0px);
+  }
+  50% {
+    transform: scale(1.1) translate(0px, -30px);
+  }
+  100% {
+    transform: scale(1) translate(0px, 0px);
   }
 }
