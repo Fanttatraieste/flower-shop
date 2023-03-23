@@ -6,13 +6,19 @@
 
 @media screen and (min-width: 1440px) {
   .contact {
-    display: flex;
-    flex-direction: column;
+    display: block;
     background-color: var(--brand-color);
     padding-bottom: 50px;
+    padding-top: 50px;
     overflow: hidden;
     .section__header__inner {
-      padding: 40px 30px 0 30px;
+      // padding: 40px 30px 0 30px;
+    }
+    .btn--round {
+      margin-right: 70px;
+    }
+    .title__container {
+      margin-left: 70px;
     }
     &__inner {
       display: flex;
@@ -269,9 +275,13 @@
 
 @media screen and (min-width: 2200px) {
   .contact {
-    .section__header__inner {
-      padding: 40px 30px 0 30px;
+    .btn--round {
+      margin-right: 90px;
     }
+    .title__container {
+      margin-left: 90px;
+    }
+
     &__inner {
       width: 2200px;
       margin-top: 100px;

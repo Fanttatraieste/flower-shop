@@ -1,0 +1,62 @@
+//gallery stilization
+
+.gallery {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .gallery {
+    display: block;
+    background-color: var(--black-color);
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .btn--round {
+      margin-right: 70px;
+      border: 1px solid var(--brand-color);
+      color: var(--brand-color);
+    }
+    .section__header__inner {
+      flex-direction: row-reverse;
+    }
+    .title__container {
+      margin-left: 70px;
+    }
+    .title {
+      color: var(--brand-color);
+      &__icon {
+        fill: var(--brand-color);
+        top: 10px;
+        right: 170px;
+        transform: rotate(180deg);
+      }
+    }
+    .home--btn {
+      margin-left: auto;
+      color: var(--brand-color);
+      border: 1px solid rgba(60, 139, 91, 0.5);
+    }
+    .bottom {
+      bottom: -420px;
+      left: -320px;
+      border: 1px solid var(--brand-color);
+      &__text {
+        color: var(--brand-color);
+        position: relative;
+        top: 80px;
+        left: 80px;
+      }
+      &__btn {
+        color: var(--brand-color);
+        position: relative;
+        top: 80px;
+        left: 80px;
+      }
+    }
+    &__inner {
+      position: relative;
+      //display: flex;
+      border: 1px solid red;
+    }
+  }
+}

@@ -2,10 +2,12 @@
 .flower {
   background-color: var(--black-color);
   padding-bottom: 50px;
+  padding-top: 100px;
   .btn--round {
     border: 1px solid var(--brand-color);
     color: var(--brand-color);
     outline: none;
+    margin-right: 40px;
   }
   .title {
     color: var(--brand-color);
@@ -22,13 +24,14 @@
   .title__container {
     display: flex;
     flex-direction: column;
+    margin-left: 40px;
   }
   .title__icon {
     fill: var(--brand-color);
   }
   .section__header__inner {
     flex-direction: row-reverse;
-    padding: 30px 30px 0px 32px;
+    //padding: 30px 30px 0px 32px;
   }
   &__list {
     margin-top: 70px;
@@ -73,8 +76,14 @@
         right: 180px;
       }
     }
+    .btn--round {
+      margin-right: 40px;
+    }
+    .title__container {
+      margin-left: 40px;
+    }
     .section__header__inner {
-      padding: 60px 60px 0px 62px;
+      // padding: 60px 60px 0px 62px;
     }
     &__list {
       margin-top: 85px;
@@ -141,8 +150,14 @@
         right: 200px;
       }
     }
+    .btn--round {
+      margin-right: 70px;
+    }
+    .title__container {
+      margin-left: 70px;
+    }
     .section__header__inner {
-      padding: 70px 70px 0px 72px;
+      // padding: 70px 70px 0px 72px;
     }
     &__list {
       margin-top: 95px;
@@ -208,7 +223,13 @@
       }
     }
     .section__header__inner {
-      padding: 80px 70px 0px 72px;
+      // padding: 80px 70px 0px 72px;
+    }
+    .btn--round {
+      margin-right: 90px;
+    }
+    .title__container {
+      margin-left: 90px;
     }
     &__list {
       margin-top: 95px;
