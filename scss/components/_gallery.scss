@@ -37,8 +37,8 @@
       border: 1px solid rgba(60, 139, 91, 0.5);
     }
     .bottom {
-      bottom: -420px;
-      left: -320px;
+      bottom: -520px;
+      left: -420px;
       border: 1px solid var(--brand-color);
       &__text {
         color: var(--brand-color);
@@ -56,7 +56,100 @@
     &__inner {
       position: relative;
       //display: flex;
-      border: 1px solid red;
+      //border: 1px solid red;
+      display: flex;
+    }
+    &__big__image {
+      width: 524px;
+      height: 284px;
+      object-fit: cover;
+      object-position: 20% 20%;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      &__container {
+        position: relative;
+        align-self: center;
+        margin-left: auto;
+      }
+      &__overlay {
+        position: absolute;
+        bottom: 2px;
+        right: 1px;
+        background: rgba(28, 26, 29, 0.5);
+        filter: blur(3.93818px);
+        backdrop-filter: blur(4.92273px);
+        width: 130px;
+        height: 58px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &__title {
+        color: rgba(124, 241, 165, 1);
+        position: absolute;
+        bottom: 20px;
+        right: 40px;
+        font-family: "Josefin Sans";
+        font-weight: 300;
+        font-size: 21px;
+        line-height: 1;
+      }
+    }
+    &__icon {
+      width: 100px;
+      height: 5px;
+      //stroke: 2px solid var(--brand-color);
+      align-self: center;
+      margin-left: 30px;
+      margin-right: 50px;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__image {
+      width: 88px;
+      height: 69px;
+      object-fit: cover;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  .gallery {
+    &__big__image {
+      width: 799px;
+      height: 432px;
+      &__cotnainer {
+        width: 799px;
+        height: 432px;
+      }
+      &__overlay {
+        width: 199px;
+        height: 88px;
+      }
+      &__title {
+        bottom: 30px;
+        right: 70px;
+      }
+    }
+    &__image {
+      width: 134px;
+      height: 104px;
+    }
+    &__list {
+      gap: 34px;
+    }
+    .bottom {
+      bottom: -770px;
+      left: -470px;
+    }
+    .title {
+      &__icon {
+        top: 10px;
+        right: 270px;
+      }
     }
   }
 }
