@@ -321,32 +321,16 @@
         <div class="contact__inner container">
           <!-------------- Find us On --------------->
           <div class="find">
-            <h4 class="find__title">You can find us on </h4>
+            <div class="find__title__container">
+              <h4 class="find__title">You can find us on </h4>
+              <ul class="find__btn__list">
+                <li><button class="find__btn" type="button" data-category="first"></button></li>
+                <li><button class="find__btn" type="button" data-category="second"></button></li>
+                <li><button class="find__btn" type="button" data-category="third"></button></li>
+              </ul>
+            </div>
             <ul class="find__list">
-              <li class="find__item">
-                <a class="find__link" href="" target="_blank">
-                  <svg class="find__icon">
-                    <use href="./images/svgs/symbol-defs.svg#icon-figma"></use>
-                  </svg>
-                  Figma 
-                </a>
-              </li>
-              <li class="find__item">
-                <a class="find__link" href="" target="_blank">
-                  <svg class="find__icon find__icon1">
-                    <use href="./images/svgs/symbol-defs.svg#icon-dribble"></use>
-                  </svg>
-                  Dribble
-                </a>
-              </li>
-              <li class="find__item">
-                <a class="find__link" href="" target="_blank">
-                  <svg class="find__icon">
-                    <use href="./images/svgs/symbol-defs.svg#icon-instagram"></use>
-                  </svg>
-                  Instagram
-                </a>
-              </li>
+              
             </ul>
           </div>
           <!-------------- Location --------------->
@@ -544,6 +528,7 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="./js/readMore.js"></script>
-    <script src="./js/exercise.js"></script>
+    <script src="./js/find.js"></script>
+    <script src="./js/gallery.js"></script>
   </body>
 </html>
