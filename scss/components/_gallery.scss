@@ -107,6 +107,8 @@
       flex-direction: column;
       gap: 20px;
       border: 1px solid red;
+      overflow: scroll;
+      height: 720px;
     }
     &__image {
       width: 88px;
