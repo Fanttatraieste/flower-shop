@@ -4,6 +4,44 @@
   display: none;
 }
 
+.section__header__light {
+  .title__container {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    &__list {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    &__link {
+      color: var(--black-color);
+      position: relative;
+      text-align: center;
+    }
+    &__link::after {
+      content: "";
+      width: 20px;
+      height: 2px;
+      background-color: var(--black-color);
+      position: absolute;
+      left: calc(50% - 10px);
+      bottom: -10px;
+      border-radius: 2px;
+    }
+    &__link:hover::after {
+      width: 100%;
+      left: 0;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__item:nth-child(3),
+    &__item:nth-child(4) {
+      display: none;
+    }
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .contact {
     display: block;
@@ -13,6 +51,9 @@
     overflow: hidden;
     .section__header__inner {
       // padding: 40px 30px 0 30px;
+    }
+    .nav {
+      display: none;
     }
     .btn--round {
       margin-right: 70px;
@@ -48,6 +89,34 @@
       }
     }
   }
+  .section__header__light {
+    .nav {
+      display: flex;
+      &__list {
+        gap: 40px;
+      }
+      &__link {
+        font-size: 32px;
+      }
+      &__link::after {
+        content: "";
+        width: 30px;
+        height: 2px;
+        background-color: var(--black-color);
+        position: absolute;
+        left: calc(50% - 15px);
+        bottom: -10px;
+        border-radius: 2px;
+      }
+
+      &__item:nth-child(3),
+      &__item:nth-child(4) {
+        display: block;
+      }
+    }
+  }
+  
+
   //-------- Find div -------
 
   #id2 {
@@ -325,6 +394,32 @@
     }
     .bottom {
       bottom: -999px;
+    }
+  }
+  .section__header__light {
+    .nav {
+      &__list {
+        gap: 60px;
+      }
+
+      &__link {
+        font-size: 42px;
+      }
+      &__link::after {
+        content: "";
+        width: 20px;
+        height: 2px;
+        background-color: var(--black-color);
+        position: absolute;
+        left: calc(50% - 10px);
+        bottom: -10px;
+        border-radius: 2px;
+      }
+
+      &__item:nth-child(3),
+      &__item:nth-child(4) {
+        display: block;
+      }
     }
   }
   //-------- Find div -------
